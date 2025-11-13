@@ -1,0 +1,190 @@
+/* Warna tema: coklat, krem, dan nuansa hangat */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0d4b4;
+  color: #3e2723;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-image: url(https://imgx.parapuan.co/crop/0x0:0x0/x/photo/2021/10/03/mengapresiasi-warisan-budaya-den-20211003030135.jpg);
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Navigasi */
+nav {
+  background-color: #8d6e63;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fbc02d;
+}
+
+/* Galeri */
+.galeri-container {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.galeri-container h2 {
+  margin-bottom: 30px;
+  color: #5d4037;
+}
+
+.galeri-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.batik-card {
+  background-color: #fff8e1;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.batik-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.batik-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.batik-card h3 {
+  margin: 15px 10px 5px;
+  color: #4e342e;
+}
+
+.batik-card p {
+  padding: 0 15px 20px;
+  font-size: 0.95em;
+  color: #5d4037;
+  text-align: justify;
+}
+
+/* Tentang */
+.tentang, .kontak {
+  padding: 40px 20px;
+  background-color: #d7ccc8;
+  text-align: center;
+}
+
+.tentang h2, .kontak h2 {
+  color: #4e342e;
+}
+
+.tentang p, .kontak p {
+  max-width: 700px;
+  margin: 10px auto;
+  line-height: 1.6;
+}
+
+/* Penulis */
+.penulis {
+  padding: 50px 20px;
+  background-color: #efebe9;
+  text-align: center;
+}
+
+.penulis-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.penulis-foto {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #a1887f;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.penulis-info {
+  max-width: 500px;
+  text-align: left;
+}
+
+.penulis-info h3 {
+  color: #4e342e;
+  margin-top: 0;
+}
+
+.penulis-info p {
+  color: #5d4037;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background-color: #5d4037;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9em;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .penulis-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .penulis-info {
+    text-align: center;
+  }
+}
